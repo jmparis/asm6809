@@ -1,10 +1,18 @@
+# asm6809 - Assembler for M6809/H6309 Microprocessor
+
+![asm6809 banner](assets/asm6809-banner.png)
+
+---
+
 ## Clone
+
 ```bash
 git clone https://github.com/jmparis/asm6809.git
 cd asm6809
 ```
 
 ## Compilation
+
 ```bash
 ./autogen.sh
 ./configure --prefix=/home/${USER}/.local
@@ -14,12 +22,14 @@ make -j$(nproc)
 make install
 ```
 
-# Usage
+## Usage
+
 ```bash
 asm6809 -o output.bin input.asm
 ```
 
-# Example
+## Example
+
 ```asm
         org     $1000
         lda     #$12
@@ -38,3 +48,5 @@ asm6809 -o output.bin input.asm
         rts
         end     $1000
 ```
+
+---
